@@ -1,0 +1,30 @@
+Creating a car values data base
+
+Create table Cars (id INTEGER primary key, model text, quantity INTEGER, price INTEGER, quality text);
+
+insert into cars values (1, "A", 20, 400, "bad");
+insert into cars values (2, "B", 2, 1000, "Good");
+insert into cars values (3, "C", 10, 100, "Great");
+insert into cars values (4, "A", 3, 500, "fair");
+insert into cars values (5, "E", 17, 200, "Great");
+insert into cars values (6, "D", 16, 300, "Bad");
+insert into cars values (7, "A", 18, 150, "Good");
+insert into cars values (8, "B", 7, 2000, "Exllecnt");
+insert into cars values (9, "C", 1, 5000, "Good");
+insert into cars values (10, "D", 9, 300, "Fair");
+insert into cars values (11, "B", 10, 250, "bad");
+insert into cars values (12, "C", 3, 350, "Great");
+insert into cars values (13, "A", 8, 650, "Great");
+insert into cars values (14, "D", 15, 600, "Normal");
+insert into cars values (15, "A", 18, 9000,"Norma;");
+
+Create table country (Model text primary key, country text);
+insert into country values ("A", "Japan");
+insert into country values ("B", "Afica");
+insert into country values ("C", "Russia");
+insert into country values ("D", "Asia");
+insert into country values ("E", "Germany");
+
+Select * from cars
+order by price; 
+Select * From country
