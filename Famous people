@@ -1,0 +1,38 @@
+Create table artists(
+    Id integer Primary key,
+    Stage_name Text,
+    real_name text);
+    
+Insert into artists (stage_name, real_name) Values ("DJ Dutch", "martin garrix");
+Insert into artists (stage_name, real_name) Values ("Marshmello", "Christopher Comstock");
+Insert into artists (stage_name, real_name) Values ('David Pierre', 'David Pierre Guetta');
+Insert into artists (stage_name, real_name) Values ("Tiësto", "Tijs Michiel Verwest");
+Insert into artists (stage_name, Real_name) Values ("Skrillex", "Sonny John Moore");
+
+CREATE TABLE songs 
+    (id INTEGER PRIMARY KEY, 
+    artist_id INTEGER,
+    title TEXT,
+    release_year INTEGER,
+    views NUMERIC);
+    
+
+Insert into songs (artist_id, title, release_year, views) values ("1", "Animals", "2016", "200k");
+Insert into songs (artist_id, title, release_year, views) values ("1", "Scared to be lonely", "2016", "300k");
+Insert into songs (artist_id, title, release_year, views) values ('1', 'There for you','2017', '100k');
+Insert into songs (artist_id, title, release_year, views) values ("2","Friends", "2018", "700k");
+Insert into songs (artist_id, title, release_year, views) values ("2", "Alone", "2016", "600k");
+Insert into songs (artist_id, title, release_year, views) values ("2", "silence", "2017", "1000k");
+Insert into songs (artist_id, title, release_year, views) values ('3', 'sexy bitch', '2010', '230k');
+Insert into songs (artist_id, title, release_year, views) values ('3', 'say my name', '2018' , '50k');
+Insert into songs (artist_id, title, release_year, views) values ('3', 'dont you worry' , '2022', "300k");
+Insert into songs (artist_id, title, release_year, views) values ('4', 'lay low', '2023', '30k');
+Insert into songs (artist_id, title, release_year, views) values ('4' ,"red lights", '2014', "10k");
+Insert into songs (artist_id, title, release_year, views) values ('4', 'traffic', '2004', '400k');
+Insert into songs (artist_id, title, release_year, views) values ('5', 'Where are u now', '2014', '500k');
+Insert into songs (artist_id, title, release_year, views) values ('5','Rumble', '2022', '200k');
+Insert into songs (artist_id, title, release_year, views) values ('5','Take u there', '2014', '200k');
+
+select stage_name 
+from artists, songs 
+where artists.id = songs.artist_id;
