@@ -1,4 +1,4 @@
-IN 
+#In this SQL, I'm querying a database with multiple tables in it to quantify statistics about advnaced customer and order data. 
 
 1.Which locations in New York received at least 3 orders in January, and how many orders did they each receive?
 Select distinct location, count(orderid)
